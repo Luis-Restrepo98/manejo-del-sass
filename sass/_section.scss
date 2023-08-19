@@ -1,0 +1,95 @@
+@use "variables";
+.content{
+    @media (min-width:1115px){
+        width: 410px;
+        margin-left: 126px;
+    }
+}
+.section{ 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: 40px;
+    @media (min-width:1115px){ 
+        margin-top: 200px;
+    }
+      
+    &_imagen_principal{
+        width: 375px;
+        height: 300px;
+        @media (min-width:1115px){
+            display: none;
+        }
+    }
+    &_title{
+        text-align: center;
+        font-size: 30px;
+        margin-top: 40px;
+        font-weight: bold;
+        @media (min-width:1115px){
+            font-weight: 700;
+            font-size: 65px;
+        }
+    }
+    &_parrafo{
+        text-align: center;
+        font-size: 18px;
+        margin-top: 10px;
+        @media (min-width:1115px){
+            font-size: 17px;
+        }
+    }
+    &_button{
+        width: 120px;
+        height: 40px;
+        font-family: variables.$font;
+        background-color: variables.$Almost-Black;
+        color: variables.$Almost-White;
+        border-radius: 10px;
+        margin-top: 30px;
+        @media (min-width:1115px){
+            margin-left: -280px;
+            &:hover{
+                cursor: pointer;
+                background-color: variables.$Almost-White;
+                color: variables.$Almost-Black;
+                font-weight: 700;
+            }
+        }
+    }
+    &_image{
+        img{
+            width: 80px;
+            height: 27px;
+            margin-top: 42px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            @media (min-width:1115px){
+                margin-right: 19.2px;
+            }
+        } 
+    }
+}
+.container_imagen{
+    img{
+        display: none;
+        @media (min-width:1115px){
+            display: block;
+            width: 460px;
+            height: 520px;
+            margin-top: 190px;
+            margin-right: 100px;
+        }
+    }     
+}
+.main_container{
+    margin: 0 auto;
+    @media (min-width:1115px){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 300px;
+    }
+}

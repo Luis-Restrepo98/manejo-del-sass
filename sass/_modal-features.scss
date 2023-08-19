@@ -1,0 +1,33 @@
+@use "variables";
+@use "mixins";
+
+.modal_features{
+    @media (min-width:1115px){
+        display: none;
+        position: absolute;
+        @include mixins.modal_features_company;
+        background-color: variables.$Almost-White;
+        width: 150px;
+        height: 150px;
+        padding: 28px 24px;
+        margin-left: -40px;
+        margin-top: 20px;
+        display: none;
+        .modal_list {  
+            padding: 0; 
+            margin: 0;
+        }
+        
+        .modal_image { 
+            list-style: none;
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 10px;
+        }
+        .modal_image img {
+            margin-right: 10px;
+            max-width: 40px;
+            height: auto;
+    }
+    }
+}

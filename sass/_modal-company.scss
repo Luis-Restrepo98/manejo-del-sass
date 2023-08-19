@@ -1,0 +1,28 @@
+@use "variables";
+@use "mixins";
+
+.modal_company_contain{
+    display: none;
+    @media (min-width:1115px){
+        @include mixins.modal_features_company;
+        background-color: variables.$Almost-White;
+        width: 150px;
+        height: 150px;
+        padding: 28px 24px;
+        margin-left: 130px;
+        margin-top: 20px;
+        list-style: none;
+        
+        .modal_company {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+          }
+      
+        .modal_text {
+            display: block; 
+            margin-bottom: 10px; 
+          }
+        
+    }
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <main class="main_container">
+    <header class="header">
+        <div class="header_navigation">
+          <img class="header_menu" src="./images/icon-menu.svg" alt="">
+          <img class="header_logo" src="./images/logo.svg" alt="logo">
+        
+
+        <nav class="navbar">
+          <ul class="navbar_items">
+            <li><a class="navbar_link" href="#">Features<img src="./images/icon-arrow-down.svg" alt=""></a></li>
+              <!--inicio modal features-->
+                <div class="modal_features">
+                  <ul class="modal_list">
+                    <li class="modal_image"><img src="./images/icon-todo.svg" alt="">Todo List</li>
+                    <li class="modal_image"><img src="./images/icon-calendar.svg" alt="">Calender</li>
+                    <li class="modal_image"><img src="./images/icon-reminders.svg" alt="">Reminders</li>
+                    <li class="modal_image"><img src="./images/icon-planning.svg" alt="">Planning</li>
+                  </ul>
+                </div>
+              <!--final modal features-->
+            <li><a class="navbar_link" href="#">Company<img src="./images/icon-arrow-down.svg" alt=""></a></li>
+              <!--inicio modal company-->
+                <div class="modal_company_contain">
+                  <ul class="modal_company">
+                    <li class="modal_text">History</li>
+                    <li class="modal_text">Our Team</li>
+                    <li class="modal_text">Blog</li>
+                  </ul>
+                </div>
+              <!--final modal company-->    
+            <li><a class="navbar_link" href="#">Careers</a></li>
+            <li><a class="navbar_link" href="#">About</a></li>
+          </ul>
+        </nav>
+      </div> 
+        <!--inicio modal navbar-->
+        <div class="modal_navbar_background">
+          <nav class="modal_navbar">
+            <img class="modal_navbar_close_icon" src="./images/icon-close-menu.svg" alt="">
+            <ul class="modal_navbar_items">
+              <li><a class="modal_navbar_link" href="#">Features<img src="./images/icon-arrow-down.svg" alt=""></a></li>
+              <li><a class="modal_navbar_link" href="#">Company<img src="./images/icon-arrow-down.svg" alt=""></a></li>
+              <li><a class="modal_navbar_link" href="#">Careers</a></li>
+              <li><a class="modal_navbar_link" href="#">About</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--final modal navbar-->
+          <div class="header_login_register">
+            <div >
+              <a class="header_login" href="#">Login</a>
+              <button class="header_register">Register</button>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <section class="content">
+      <article class="section">
+        <img class="section_imagen_principal" src="./images/image-hero-mobile.png" alt="">
+        <h1 class="section_title">Make remote work</h1>
+        <p class="section_parrafo">Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.</p>
+        <button class="section_button">Learn more</button>
+        <div class="section_image">
+          <img src="./images/client-databiz.svg" alt="databiz">
+          <img src="./images/client-audiophile.svg" alt="audiophile">
+          <img src="./images/client-meet.svg" alt="meet">
+          <img src="./images/client-maker.svg" alt="maker">
+        </div>
+      </article>
+    </section>
+    <section>
+      <div class="container_imagen">
+        <img class="container_imagen_principal" src="./images/image-hero-desktop.png" alt="">
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

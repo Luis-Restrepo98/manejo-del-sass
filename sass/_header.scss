@@ -1,0 +1,76 @@
+@use "variables";
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    padding: 0 24px;
+    @media (min-width:1115px){
+        position: fixed;
+        top: 0;
+        left: 40px;
+        right: 0;
+        height: 112px;
+        padding: 0 24px;
+    }
+    &_navigation{
+        width: 375px;
+        height: 100%;
+        margin-right: -25px;
+        margin-left: -25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+        @media (min-width:1115px){
+            width: 590px;
+        }
+    }
+    &_menu{
+        &:hover{
+            cursor: pointer;
+        }
+        @media (min-width:1115px){
+            display: none;
+        }
+    }
+    &_login_register {
+      display: none;
+      @media (min-width: 1115px) {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+    
+    .header_login{
+      
+      @media (min-width:1115px){
+        text-decoration: none;
+        font-size: variables.$font;
+        font-weight: 500;
+        color: variables.$Almost-Black;
+        margin-right: 30px;
+      }
+
+    }
+    
+    .header_register {
+          @media (min-width: 1115px) {
+            width: 100px;
+            height: 35px;
+            font-size: variables.$font;
+            font-weight: 700;
+            background-color: variables.$Almost-White;
+            color: variables.$Almost-Black;
+            border-radius: 10px;
+            margin-top: 30px;
+            margin-right: 30px;
+            cursor: pointer;
+            }
+    
+          }
+        }
+      }
+    
+
